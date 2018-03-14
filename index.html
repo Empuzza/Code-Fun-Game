@@ -3,7 +3,38 @@
 <head>
 	<title>JAVA_SCRIPT</title>
 </head>
+
 <body>
+	<button id="a" onclick="nic()">OK</button>
+
+	<button id="b" onclick="sth()">TAK</button>
+
+	<button id="c" onclick="nth()">NIE</button>
+
+	<p id="demon"></p>
+
+	<script type="text/javascript">
+			function zero(a,b){
+				console.log(a+b);
+			}
+
+			function nic(){
+				alert("umrzesz");
+			}
+
+			function sth(){
+				confirm("oddychasz?");
+			}
+
+			function nth(){
+				var name = prompt("jak masz na imie","Harry Potter");
+				if (name != null) {
+			document.getElementById("demon").innerHTML = "Dobranoc" + name + "Slodkich Snow";
+				}
+			}
+
+	</script>
 
 </body>
+
 </html>
